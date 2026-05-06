@@ -1,0 +1,516 @@
+{
+    "common": {
+        "appName": "Disc Golf Tracker",
+        "appShortName": "DGT",
+        "noName": "Bez imienia",
+        "viewAll": "Wszystkie",
+        "search": "Szukaj",
+        "save": "Zapisz",
+        "saving": "Zapisuję…",
+        "cancel": "Anuluj",
+        "back": "Wstecz",
+        "delete": "Usuń",
+        "remove": "Usuń",
+        "open": "Otwórz",
+        "edit": "Edytuj",
+        "optional": "opcjonalnie",
+        "loading": "Ładowanie…",
+        "tryAgain": "Spróbuj ponownie",
+        "goHome": "Wróć do dashboardu"
+    },
+    "notFound": {
+        "title": "Strona nie znaleziona",
+        "body": "Ta strona nie istnieje lub została usunięta."
+    },
+    "errorPage": {
+        "title": "Coś poszło nie tak",
+        "body": "Spróbuj odświeżyć stronę. Jeśli problem nie ustąpi, daj nam znać."
+    },
+    "share": {
+        "copy": "Kopiuj link",
+        "copied": "Link skopiowany",
+        "ariaLabel": "Udostępnij rundę",
+        "failed": "Nie udało się skopiować"
+    },
+    "gameInvite": {
+        "title": "Dołącz do rundy",
+        "host": "Host: {name}",
+        "course": "Trasa: {name}",
+        "join": "Dołącz",
+        "joining": "Dołączam…",
+        "back": "Anuluj",
+        "errors": {
+            "auth": "Zaloguj się, aby dołączyć.",
+            "gameNotFound": "Ta runda nie istnieje.",
+            "cancelled": "Runda została anulowana.",
+            "alreadyJoined": "Już jesteś w tej rundzie.",
+            "db": "Błąd: {detail}"
+        }
+    },
+    "nav": {
+        "ariaLabel": "Główna nawigacja",
+        "home": "Start",
+        "courses": "Trasy",
+        "play": "Graj",
+        "friends": "Ekipa",
+        "stats": "Staty"
+    },
+    "topBar": {
+        "appName": "Disc Golf Tracker"
+    },
+    "userMenu": {
+        "ariaLabel": "Menu użytkownika",
+        "profile": "Profil",
+        "signOut": "Wyloguj się",
+        "nameFallback": "Bez imienia",
+        "theme": {
+            "label": "Motyw",
+            "light": "Jasny",
+            "dark": "Ciemny",
+            "system": "Systemowy"
+        },
+        "locale": {
+            "label": "Język"
+        },
+        "installPwa": "Zainstaluj aplikację",
+        "installedToast": "Aplikacja zainstalowana"
+    },
+    "landing": {
+        "pill": "🥏 Disc Golf · Polska",
+        "titleStart": "Twój scorecard disc golfa.",
+        "titleEnd": "Live, ze znajomymi.",
+        "description": "Twórz rozgrywki, zapraszaj znajomych, zapisuj wyniki na żywo i obserwuj statystyki na każdej polskiej trasie.",
+        "ctaSignIn": "Zaloguj się",
+        "ctaCourses": "Przeglądaj trasy",
+        "features": {
+            "live": {
+                "title": "Live scorecard",
+                "body": "Realtime przez Supabase."
+            },
+            "strokePlay": {
+                "title": "Stroke Play",
+                "body": "Wyniki względem paru per dołek."
+            },
+            "stats": {
+                "title": "Statystyki",
+                "body": "Średnia, najlepsza runda, leaderboard."
+            }
+        }
+    },
+    "auth": {
+        "card": {
+            "title": "Disc Golf Tracker",
+            "subtitle": "Zaloguj się, aby śledzić rundy i grać ze znajomymi.",
+            "termsPrefix": "Logując się akceptujesz",
+            "termsLink": "regulamin"
+        },
+        "form": {
+            "googleConnecting": "Łączę z Google…",
+            "google": "Zaloguj się z Google",
+            "divider": "lub",
+            "emailLabel": "Email",
+            "emailPlaceholder": "twoj@email.com",
+            "passwordLabel": "Hasło",
+            "passwordPlaceholder": "••••••••",
+            "signingIn": "Logowanie…",
+            "signIn": "Zaloguj email + hasło",
+            "creating": "Tworzenie…",
+            "signUp": "Utwórz konto",
+            "errorEmailPasswordRequired": "Podaj email i hasło.",
+            "signUpSuccess": "Konto utworzone. Sprawdź skrzynkę email, aby potwierdzić rejestrację.",
+            "forgotPassword": "Zapomniałeś hasła?"
+        },
+        "forgotPassword": {
+            "title": "Resetuj hasło",
+            "body": "Podaj email — wyślemy Ci link do ustawienia nowego hasła.",
+            "send": "Wyślij link",
+            "sending": "Wysyłam…",
+            "sent": "Sprawdź skrzynkę email.",
+            "back": "Wróć do logowania",
+            "errorRequired": "Podaj email."
+        },
+        "resetPassword": {
+            "title": "Ustaw nowe hasło",
+            "body": "Podaj nowe hasło dla swojego konta.",
+            "passwordLabel": "Nowe hasło",
+            "passwordPlaceholder": "co najmniej 6 znaków",
+            "submit": "Zapisz hasło",
+            "saving": "Zapisuję…",
+            "success": "Hasło zaktualizowane.",
+            "noSession": "Link wygasł lub jest nieprawidłowy. Poproś o nowy.",
+            "errorTooShort": "Hasło musi mieć co najmniej 6 znaków.",
+            "errorWeak": "Hasło jest zbyt słabe."
+        }
+    },
+    "offline": {
+        "title": "Jesteś offline",
+        "body": "Aplikacja działa w trybie PWA. Gdy wrócisz do sieci, odśwież stronę, żeby zsynchronizować najnowsze dane."
+    },
+    "dashboard": {
+        "welcome": "Witaj",
+        "greetingFallback": "Discgolfisto",
+        "newGameCard": {
+            "label": "Nowa rozgrywka",
+            "body": "Wybierz trasę i zaproś znajomych",
+            "cta": "Graj"
+        },
+        "active": {
+            "title": "Trwające rundy",
+            "cta": "Wróć"
+        },
+        "tiles": {
+            "rounds": "Twoje rundy",
+            "courses": "Trasy w bazie",
+            "friends": "Znajomi"
+        },
+        "recent": {
+            "title": "Ostatnie rundy",
+            "empty": "Jeszcze nie masz żadnej rundy.",
+            "emptyCta": "Zacznij pierwszą"
+        }
+    },
+    "courses": {
+        "title": "Trasy",
+        "countSubtitle": "{count, plural, one {# trasa} few {# trasy} many {# tras} other {# tras}} w bazie. Stuknij, aby zobaczyć szczegóły.",
+        "empty": "Brak tras. Zastosuj migracje: <code>npx supabase db push</code>.",
+        "row": {
+            "noCity": "—",
+            "info": "{city} · {holes, plural, one {# dołek} few {# dołki} many {# dołków} other {# dołków}} · par {par}"
+        },
+        "detail": {
+            "subtitle": "Trasa",
+            "stats": "{holes, plural, one {# dołek} few {# dołki} many {# dołków} other {# dołków}} · par {par}",
+            "holesTitle": "Dołki",
+            "holeNumber": "Dołek",
+            "holePar": "Par",
+            "holeDistance": "Dystans",
+            "noHoles": "Ta trasa nie ma jeszcze zdefiniowanych dołków.",
+            "startCta": "Graj na tej trasie",
+            "back": "Wszystkie trasy",
+            "leaderboardTitle": "Najlepsi na trasie",
+            "leaderboardSubtitle": "Zakończone rundy, sortowane po średnim wyniku",
+            "leaderboardEmpty": "Jeszcze żadnej zakończonej rundy. Bądź pierwszy!",
+            "leaderboardRounds": "{count, plural, one {# runda} few {# rundy} many {# rund} other {# rund}}",
+            "leaderboardAvg": "śr. {avg}",
+            "leaderboardBest": "naj. {best}"
+        }
+    },
+    "profile": {
+        "title": "Profil",
+        "usernameLabel": "Username",
+        "createdLabel": "Konto utworzone",
+        "noUsername": "—",
+        "danger": {
+            "cardTitle": "Strefa niebezpieczna",
+            "description": "Trwałe usunięcie konta usunie wszystkie Twoje rundy, wyniki i znajomości. Tej akcji nie da się cofnąć.",
+            "deleteCta": "Usuń konto",
+            "deleting": "Usuwam…",
+            "dialogTitle": "Usunąć konto na zawsze?",
+            "dialogBody": "Wszystkie Twoje dane (rundy jako host, znajomości, wyniki) zostaną nieodwracalnie usunięte. Tej akcji nie da się cofnąć.",
+            "dialogCancel": "Anuluj",
+            "dialogConfirm": "Tak, usuń konto",
+            "deletedToast": "Konto usunięte. Pa! 👋",
+            "errors": {
+                "auth": "Brak zalogowanego użytkownika.",
+                "db": "Nie udało się usunąć konta: {detail}"
+            }
+        },
+        "edit": {
+            "title": "Edytuj profil",
+            "fullNameLabel": "Imię i nazwisko",
+            "fullNamePlaceholder": "Jan Kowalski",
+            "usernameLabel": "Username",
+            "usernamePlaceholder": "jankowal",
+            "usernameHint": "3–24 znaki: litery, cyfry, podkreślniki.",
+            "avatarLabel": "URL zdjęcia profilowego",
+            "avatarPlaceholder": "https://…",
+            "savedToast": "Profil zaktualizowany",
+            "avatarUpload": "Wgraj zdjęcie",
+            "avatarUploading": "Wgrywam…",
+            "avatarRemove": "Usuń zdjęcie",
+            "errors": {
+                "auth": "Brak zalogowanego użytkownika.",
+                "validation": "Sprawdź wprowadzone dane.",
+                "usernameTaken": "Username jest już zajęty.",
+                "usernameInvalid": "Username musi mieć 3–24 znaki: litery, cyfry, _.",
+                "fullNameTooLong": "Imię i nazwisko może mieć maks. 80 znaków.",
+                "avatarInvalid": "Podaj poprawny adres URL zdjęcia.",
+                "uploadFailed": "Nie udało się wgrać zdjęcia.",
+                "fileTooBig": "Plik za duży (max 5MB).",
+                "unsupportedType": "Niewspierany typ pliku. Dozwolone: JPG, PNG, WEBP, GIF.",
+                "db": "Błąd zapisu: {detail}"
+            }
+        }
+    },
+    "games": {
+        "list": {
+            "subtitle": "Historia rozgrywek",
+            "title": "Rozgrywki",
+            "ctaCardTitle": "Startuj kolejną rundę",
+            "ctaCardBody": "Wybierz trasę, dodaj znajomych i odpal scorecard na żywo.",
+            "ctaCardButton": "Nowa gra",
+            "recentTitle": "Ostatnia runda",
+            "empty": "Nie masz jeszcze żadnych rund. Utwórz pierwszą grę.",
+            "openRound": "Otwórz rundę",
+            "finishedAt": "Zakończona {date}",
+            "nameFallback": "Bez nazwy",
+            "allRounds": "Wszystkie rundy"
+        },
+        "statuses": {
+            "scheduled": "Zaplanowana",
+            "in_progress": "Trwa",
+            "finished": "Zakończona",
+            "cancelled": "Anulowana"
+        },
+        "new": {
+            "title": "Nowa rozgrywka",
+            "subtitle": "Wybierz trasę, dodaj graczy i startuj scorecard.",
+            "profileError": "Nie udało się wczytać profilu. Spróbuj wylogować się i zalogować ponownie.",
+            "noCourses": "Brak tras w bazie. Wgraj migracje: <code>npx supabase db push</code>."
+        },
+        "detail": {
+            "backToList": "Wszystkie rundy",
+            "noCourse": "Gra nie ma przypisanej trasy. Skontaktuj się z hostem.",
+            "noHoles": "Trasa nie ma jeszcze zdefiniowanych dołków.",
+            "noPlayers": "Brak graczy w tej rundzie."
+        },
+        "wizard": {
+            "stepCourse": "Trasa",
+            "stepPlayers": "Gracze",
+            "stepStart": "Start",
+            "courseHeading": "Wybierz trasę",
+            "courseSearchPlaceholder": "Szukaj po nazwie lub mieście…",
+            "courseEmpty": "Brak wyników.",
+            "courseInfo": "{city} · {holes, plural, one {# dołek} few {# dołki} many {# dołków} other {# dołków}} · par {par}",
+            "playersHeading": "Gracze",
+            "playersCounter": "{n} z {max} · jesteś dodany jako host.",
+            "playersHost": "Host",
+            "playersRemoveAriaLabel": "Usuń gracza",
+            "playersAddLabel": "Dodaj gracza",
+            "playersSearchPlaceholder": "Imię lub @username…",
+            "playersSearching": "Szukam…",
+            "playersNoResults": "Brak wyników.",
+            "playersSearchHint": "Wpisz co najmniej {min} znaki, żeby wyszukać znajomych. Możesz pominąć ten krok i grać solo.",
+            "reviewHeading": "Podsumowanie",
+            "reviewRouteLabel": "Trasa",
+            "reviewPlayersLabel": "Gracze ({n})",
+            "reviewNameLabel": "Nazwa rundy (opcjonalnie)",
+            "reviewNamePlaceholder": "np. „Lotników DiscGolfPark · 06.05.2026, 18:30”",
+            "reviewNameHint": "Domyślnie użyjemy nazwy trasy oraz aktualnej daty i godziny. Możesz to zmienić.",
+            "actionBack": "Wstecz",
+            "actionNext": "Dalej",
+            "actionCreating": "Tworzę…",
+            "actionStart": "Start grę",
+            "errorPickCourse": "Wybierz trasę."
+        },
+        "newErrors": {
+            "auth": "Brak zalogowanego użytkownika.",
+            "validation": "Błąd danych formularza.",
+            "courseMissing": "Wybrana trasa nie istnieje.",
+            "noHoles": "Ta trasa nie ma jeszcze zdefiniowanych dołków.",
+            "createFailed": "Nie udało się utworzyć gry{detail}",
+            "playersFailed": "Nie udało się dodać graczy{detail}",
+            "generic": "Coś poszło nie tak."
+        }
+    },
+    "friends": {
+        "subtitle": "Zaproszenia i relacje",
+        "title": "Znajomi",
+        "addCardTitle": "Dodaj znajomego",
+        "searchPlaceholder": "Imię lub username",
+        "searchButton": "Szukaj",
+        "minHint": "Wpisz co najmniej {min} znaki, żeby wyszukać użytkowników.",
+        "noResults": "Brak wyników wyszukiwania.",
+        "send": "Wyślij zaproszenie",
+        "pendingHeading": "Oczekujące zaproszenia ({n})",
+        "pendingEmpty": "Nie masz żadnych oczekujących zaproszeń.",
+        "incomingSubtitle": "Zaprasza Cię do znajomych",
+        "outgoingSubtitle": "Oczekuje na odpowiedź",
+        "accept": "Akceptuj",
+        "reject": "Odrzuć",
+        "cancelInvite": "Anuluj",
+        "acceptedHeading": "Znajomi ({n})",
+        "acceptedEmpty": "Jeszcze nie masz żadnych znajomych.",
+        "friendSubtitle": "Znajomy",
+        "remove": "Usuń",
+        "footnote": "Zaproszenia działają na bazie tabeli friendships i są od razu widoczne po odświeżeniu.",
+        "errors": {
+            "auth": "Brak zalogowanego użytkownika.",
+            "self_invite": "Nie możesz dodać siebie do znajomych.",
+            "target_not_found": "Nie znaleziono użytkownika.",
+            "already_friends": "Już jesteście znajomymi.",
+            "already_sent": "Zaproszenie już zostało wysłane.",
+            "already_received": "Masz już zaproszenie od tej osoby.",
+            "invite_not_found": "Nie znaleziono zaproszenia.",
+            "cannot_accept": "Nie możesz zaakceptować tego zaproszenia.",
+            "relation_not_found": "Nie znaleziono relacji.",
+            "cannot_remove": "Nie możesz usunąć tej relacji.",
+            "validation": "Błąd danych.",
+            "db": "Błąd: {detail}"
+        },
+        "toast": {
+            "inviteSent": "Zaproszenie wysłane",
+            "inviteAccepted": "Zaproszenie zaakceptowane",
+            "inviteRejected": "Zaproszenie odrzucone",
+            "removed": "Usunięto znajomego",
+            "cancelled": "Zaproszenie anulowane"
+        }
+    },
+    "stats": {
+        "subtitle": "Twoje wyniki",
+        "title": "Statystyki",
+        "metrics": {
+            "roundsLabel": "Rozegrane rundy",
+            "roundsHoles": "{count, plural, one {# ukończony dołek} few {# ukończone dołki} many {# ukończonych dołków} other {# ukończonych dołków}}",
+            "roundsEmpty": "Brak danych",
+            "averageLabel": "Średni wynik",
+            "averageDescription": "Średnia liczba uderzeń w rundzie",
+            "averageEmpty": "Zagraj pierwszą rundę",
+            "bestLabel": "Najlepsza runda",
+            "bestStrokes": "{count, plural, one {# uderzenie} few {# uderzenia} many {# uderzeń} other {# uderzeń}}",
+            "bestEmpty": "Brak zakończonych rund"
+        },
+        "recent": {
+            "title": "Ostatnie rundy",
+            "empty": "Jeszcze nie masz zakończonych rund."
+        },
+        "leaderboard": {
+            "title": "Leaderboard znajomych",
+            "scopeHint": "Liczone tylko z rund, w których graliście razem.",
+            "peopleBadge": "{count, plural, one {# osoba} few {# osoby} many {# osób} other {# osób}}",
+            "empty": "Zagraj wspólną rundę ze znajomym, żeby zobaczyć ranking.",
+            "summary": "{rounds, plural, one {# runda} few {# rundy} many {# rund} other {# rund}} · {holes, plural, one {# dołek} few {# dołki} many {# dołków} other {# dołków}}",
+            "average": "średnio {avg} na rundę"
+        }
+    },
+    "scorecard": {
+        "titleFallback": "Runda",
+        "status": {
+            "in_progress": "trwa",
+            "finished": "zakończona"
+        },
+        "reopen": "Wznów",
+        "finish": "Zakończ rundę",
+        "finishDialog": {
+            "title": "Zakończyć rundę?",
+            "body": "Wyniki nie będą już edytowalne. Możesz później wznowić rundę.",
+            "missingBody": "Nie wszystkie wyniki są uzupełnione. Sprawdź braki poniżej. Kliknij dalej, jeśli mimo to chcesz zakończyć rundę.",
+            "missingSecondConfirm": "To drugie potwierdzenie. Runda zostanie zakończona mimo brakujących wyników.",
+            "missingTitle": "Brakujące wyniki",
+            "missingHoles": "dołki: {holes}",
+            "unknownPlayer": "Nieznany gracz",
+            "reviewMissingConfirm": "Rozumiem, kontynuuj",
+            "cancel": "Anuluj",
+            "confirm": "Zakończ rundę"
+        },
+        "tabs": {
+            "play": "Gra",
+            "card": "Karta"
+        },
+        "finishedBanner": "Runda zakończona — wyniki nie podlegają już edycji.",
+        "toast": {
+            "scoreFailed": "Nie zapisano wyniku",
+            "clearFailed": "Nie usunięto wyniku",
+            "finished": "Runda zakończona",
+            "reopened": "Runda wznowiona"
+        },
+        "errors": {
+            "noGameId": "Brak id gry.",
+            "auth": "Brak zalogowanego użytkownika.",
+            "gameNotFound": "Gra nie istnieje.",
+            "onlyHostFinish": "Tylko host może zakończyć rundę.",
+            "alreadyFinished": "Runda już zakończona.",
+            "onlyHostReopen": "Tylko host może wznowić rundę.",
+            "notPlayer": "Nie jesteś graczem w tej rundzie.",
+            "nameTooLong": "Nazwa może mieć maks. 80 znaków.",
+            "displayNameTooLong": "Pseudonim może mieć maks. 40 znaków.",
+            "notesTooLong": "Notatka może mieć maks. 1000 znaków.",
+            "db": "Błąd bazy: {detail}"
+        },
+        "notes": {
+            "trigger": "Notatka",
+            "ariaLabel": "Notatka rundy",
+            "title": "Notatka rundy",
+            "placeholder": "np. wiatr 30 km/h od zachodu, mokro po deszczu…",
+            "save": "Zapisz",
+            "cancel": "Anuluj",
+            "savedToast": "Notatka zapisana",
+            "empty": "Host może dodać notatkę widoczną dla wszystkich graczy.",
+            "readOnly": "Tylko host może edytować notatkę."
+        },
+        "summary": {
+            "title": "Runda zakończona!",
+            "yourTotal": "Twój wynik",
+            "yourPlace": "{place} miejsce",
+            "yourPlaceFirst": "1 miejsce 🏆",
+            "vsPar": "vs par",
+            "bestHole": "Najlepszy dołek",
+            "worstHole": "Najgorszy dołek",
+            "holeNumberValue": "Dołek {n}",
+            "distribution": "Rozkład wyników",
+            "rematch": "Zagraj z tą ekipą",
+            "viewScorecard": "Zobacz kartę",
+            "openTrigger": "Pokaż podsumowanie",
+            "noScores": "Bez ukończonych dołków."
+        },
+        "editName": {
+            "label": "Nazwa rundy",
+            "placeholder": "np. Sobota Skaryszewski",
+            "save": "Zapisz",
+            "cancel": "Anuluj",
+            "savedToast": "Nazwa zapisana"
+        },
+        "editDisplayName": {
+            "label": "Twój pseudonim w tej rundzie",
+            "placeholder": "Jak Cię wyświetlać?",
+            "save": "Zapisz",
+            "cancel": "Anuluj",
+            "savedToast": "Pseudonim zapisany",
+            "trigger": "Edytuj pseudonim"
+        },
+        "presence": {
+            "online": "{n, plural, one {# osoba online} few {# osoby online} many {# osób online} other {# osób online}}",
+            "you": "Ty"
+        }
+    },
+    "holePlay": {
+        "prevAriaLabel": "Poprzedni dołek",
+        "nextAriaLabel": "Następny dołek",
+        "hole": "Dołek",
+        "holeOf": "/ {n}",
+        "par": "Par",
+        "distance": "{m} m",
+        "noScore": "brak",
+        "lockedFinished": "Edycja zablokowana — runda zakończona.",
+        "lockedNotAllowed": "Tylko host lub sam gracz mogą edytować.",
+        "nextCta": "Dalej do dołka {n}"
+    },
+    "grid": {
+        "headerPlayer": "Gracz",
+        "headerTotal": "Tot",
+        "headerVs": "vs",
+        "headerPar": "Par"
+    },
+    "leaderboard": {
+        "title": "Leaderboard",
+        "hostAriaLabel": "Host",
+        "holesPlayed": "{count, plural, one {# dołek rozegrany} few {# dołki rozegrane} many {# dołków rozegranych} other {# dołków rozegranych}}"
+    },
+    "strokesPicker": {
+        "ariaQuick": "{n, plural, one {# uderzenie} few {# uderzenia} many {# uderzeń} other {# uderzeń}} ({label})",
+        "ariaCustom": "Inna liczba uderzeń",
+        "ariaSave": "Zapisz",
+        "ariaCancel": "Anuluj",
+        "ariaClear": "Wyczyść"
+    },
+    "strokes": {
+        "ace": "Ace",
+        "albatross": "Albatros",
+        "eagle": "Eagle",
+        "birdie": "Birdie",
+        "par": "Par",
+        "bogey": "Bogey",
+        "double-bogey": "Double",
+        "triple-bogey-plus": "Triple+"
+    }
+}

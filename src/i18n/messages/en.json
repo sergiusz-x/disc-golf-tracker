@@ -1,0 +1,516 @@
+{
+    "common": {
+        "appName": "Disc Golf Tracker",
+        "appShortName": "DGT",
+        "noName": "No name",
+        "viewAll": "All",
+        "search": "Search",
+        "save": "Save",
+        "saving": "Saving…",
+        "cancel": "Cancel",
+        "back": "Back",
+        "delete": "Delete",
+        "remove": "Remove",
+        "open": "Open",
+        "edit": "Edit",
+        "optional": "optional",
+        "loading": "Loading…",
+        "tryAgain": "Try again",
+        "goHome": "Back to dashboard"
+    },
+    "notFound": {
+        "title": "Page not found",
+        "body": "This page doesn't exist or was removed."
+    },
+    "errorPage": {
+        "title": "Something went wrong",
+        "body": "Try refreshing the page. If the problem persists, let us know."
+    },
+    "share": {
+        "copy": "Copy link",
+        "copied": "Link copied",
+        "ariaLabel": "Share round",
+        "failed": "Couldn't copy"
+    },
+    "gameInvite": {
+        "title": "Join the round",
+        "host": "Host: {name}",
+        "course": "Course: {name}",
+        "join": "Join",
+        "joining": "Joining…",
+        "back": "Cancel",
+        "errors": {
+            "auth": "Sign in to join.",
+            "gameNotFound": "This round doesn't exist.",
+            "cancelled": "This round was cancelled.",
+            "alreadyJoined": "You're already in this round.",
+            "db": "Error: {detail}"
+        }
+    },
+    "nav": {
+        "ariaLabel": "Main navigation",
+        "home": "Home",
+        "courses": "Courses",
+        "play": "Play",
+        "friends": "Friends",
+        "stats": "Stats"
+    },
+    "topBar": {
+        "appName": "Disc Golf Tracker"
+    },
+    "userMenu": {
+        "ariaLabel": "User menu",
+        "profile": "Profile",
+        "signOut": "Sign out",
+        "nameFallback": "No name",
+        "theme": {
+            "label": "Theme",
+            "light": "Light",
+            "dark": "Dark",
+            "system": "System"
+        },
+        "locale": {
+            "label": "Language"
+        },
+        "installPwa": "Install app",
+        "installedToast": "App installed"
+    },
+    "landing": {
+        "pill": "🥏 Disc Golf · Poland",
+        "titleStart": "Your disc golf scorecard.",
+        "titleEnd": "Live, with friends.",
+        "description": "Create rounds, invite friends, track scores live and follow your stats on every Polish course.",
+        "ctaSignIn": "Sign in",
+        "ctaCourses": "Browse courses",
+        "features": {
+            "live": {
+                "title": "Live scorecard",
+                "body": "Realtime via Supabase."
+            },
+            "strokePlay": {
+                "title": "Stroke Play",
+                "body": "Scores relative to par per hole."
+            },
+            "stats": {
+                "title": "Stats",
+                "body": "Average, best round, leaderboard."
+            }
+        }
+    },
+    "auth": {
+        "card": {
+            "title": "Disc Golf Tracker",
+            "subtitle": "Sign in to track rounds and play with friends.",
+            "termsPrefix": "By signing in you accept the",
+            "termsLink": "terms"
+        },
+        "form": {
+            "googleConnecting": "Connecting to Google…",
+            "google": "Sign in with Google",
+            "divider": "or",
+            "emailLabel": "Email",
+            "emailPlaceholder": "you@email.com",
+            "passwordLabel": "Password",
+            "passwordPlaceholder": "••••••••",
+            "signingIn": "Signing in…",
+            "signIn": "Sign in with email",
+            "creating": "Creating…",
+            "signUp": "Create account",
+            "errorEmailPasswordRequired": "Please enter both email and password.",
+            "signUpSuccess": "Account created. Check your inbox to confirm registration.",
+            "forgotPassword": "Forgot password?"
+        },
+        "forgotPassword": {
+            "title": "Reset password",
+            "body": "Enter your email — we'll send you a link to set a new password.",
+            "send": "Send link",
+            "sending": "Sending…",
+            "sent": "Check your inbox.",
+            "back": "Back to sign in",
+            "errorRequired": "Email is required."
+        },
+        "resetPassword": {
+            "title": "Set new password",
+            "body": "Enter a new password for your account.",
+            "passwordLabel": "New password",
+            "passwordPlaceholder": "at least 6 characters",
+            "submit": "Save password",
+            "saving": "Saving…",
+            "success": "Password updated.",
+            "noSession": "The reset link expired or is invalid. Request a new one.",
+            "errorTooShort": "Password must be at least 6 characters.",
+            "errorWeak": "This password is too weak."
+        }
+    },
+    "offline": {
+        "title": "You are offline",
+        "body": "The app runs in PWA mode. When you are back online, refresh the page to sync the latest data."
+    },
+    "dashboard": {
+        "welcome": "Welcome",
+        "greetingFallback": "Disc golfer",
+        "newGameCard": {
+            "label": "New round",
+            "body": "Pick a course and invite friends",
+            "cta": "Play"
+        },
+        "active": {
+            "title": "Active rounds",
+            "cta": "Resume"
+        },
+        "tiles": {
+            "rounds": "Your rounds",
+            "courses": "Courses in catalog",
+            "friends": "Friends"
+        },
+        "recent": {
+            "title": "Recent rounds",
+            "empty": "You don't have any rounds yet.",
+            "emptyCta": "Start your first"
+        }
+    },
+    "courses": {
+        "title": "Courses",
+        "countSubtitle": "{count, plural, one {# course} other {# courses}} in catalog. Tap one to see details.",
+        "empty": "No courses. Apply migrations: <code>npx supabase db push</code>.",
+        "row": {
+            "noCity": "—",
+            "info": "{city} · {holes, plural, one {# hole} other {# holes}} · par {par}"
+        },
+        "detail": {
+            "subtitle": "Course",
+            "stats": "{holes, plural, one {# hole} other {# holes}} · par {par}",
+            "holesTitle": "Holes",
+            "holeNumber": "Hole",
+            "holePar": "Par",
+            "holeDistance": "Distance",
+            "noHoles": "This course has no holes defined yet.",
+            "startCta": "Play this course",
+            "back": "All courses",
+            "leaderboardTitle": "Top on this course",
+            "leaderboardSubtitle": "Finished rounds, sorted by average score",
+            "leaderboardEmpty": "No finished rounds yet. Be the first!",
+            "leaderboardRounds": "{count, plural, one {# round} other {# rounds}}",
+            "leaderboardAvg": "avg {avg}",
+            "leaderboardBest": "best {best}"
+        }
+    },
+    "profile": {
+        "title": "Profile",
+        "usernameLabel": "Username",
+        "createdLabel": "Account created",
+        "noUsername": "—",
+        "danger": {
+            "cardTitle": "Danger zone",
+            "description": "Permanently deleting your account removes every round, score and friendship. This cannot be undone.",
+            "deleteCta": "Delete account",
+            "deleting": "Deleting…",
+            "dialogTitle": "Delete account forever?",
+            "dialogBody": "All your data (rounds you hosted, friendships, scores) will be permanently removed. This cannot be undone.",
+            "dialogCancel": "Cancel",
+            "dialogConfirm": "Yes, delete account",
+            "deletedToast": "Account deleted. Bye! 👋",
+            "errors": {
+                "auth": "Not signed in.",
+                "db": "Couldn't delete the account: {detail}"
+            }
+        },
+        "edit": {
+            "title": "Edit profile",
+            "fullNameLabel": "Full name",
+            "fullNamePlaceholder": "Jane Smith",
+            "usernameLabel": "Username",
+            "usernamePlaceholder": "janesmith",
+            "usernameHint": "3–24 characters: letters, digits, underscores.",
+            "avatarLabel": "Profile picture URL",
+            "avatarPlaceholder": "https://…",
+            "savedToast": "Profile updated",
+            "avatarUpload": "Upload picture",
+            "avatarUploading": "Uploading…",
+            "avatarRemove": "Remove picture",
+            "errors": {
+                "auth": "Not signed in.",
+                "validation": "Check your input.",
+                "usernameTaken": "This username is already taken.",
+                "usernameInvalid": "Username must be 3–24 characters: letters, digits, _.",
+                "fullNameTooLong": "Full name can be at most 80 characters.",
+                "avatarInvalid": "Provide a valid image URL.",
+                "uploadFailed": "Couldn't upload the image.",
+                "fileTooBig": "File too large (max 5MB).",
+                "unsupportedType": "Unsupported file type. Allowed: JPG, PNG, WEBP, GIF.",
+                "db": "Save error: {detail}"
+            }
+        }
+    },
+    "games": {
+        "list": {
+            "subtitle": "Round history",
+            "title": "Rounds",
+            "ctaCardTitle": "Start another round",
+            "ctaCardBody": "Pick a course, add friends and fire up the live scorecard.",
+            "ctaCardButton": "New round",
+            "recentTitle": "Latest round",
+            "empty": "You have no rounds yet. Create your first one.",
+            "openRound": "Open round",
+            "finishedAt": "Finished {date}",
+            "nameFallback": "Untitled",
+            "allRounds": "All rounds"
+        },
+        "statuses": {
+            "scheduled": "Scheduled",
+            "in_progress": "In progress",
+            "finished": "Finished",
+            "cancelled": "Cancelled"
+        },
+        "new": {
+            "title": "New round",
+            "subtitle": "Pick a course, add players, start the scorecard.",
+            "profileError": "Could not load your profile. Try signing out and back in.",
+            "noCourses": "No courses in catalog. Apply migrations: <code>npx supabase db push</code>."
+        },
+        "detail": {
+            "backToList": "All rounds",
+            "noCourse": "This game has no course assigned. Contact the host.",
+            "noHoles": "The course has no holes defined yet.",
+            "noPlayers": "No players in this round."
+        },
+        "wizard": {
+            "stepCourse": "Course",
+            "stepPlayers": "Players",
+            "stepStart": "Start",
+            "courseHeading": "Pick a course",
+            "courseSearchPlaceholder": "Search by name or city…",
+            "courseEmpty": "No results.",
+            "courseInfo": "{city} · {holes, plural, one {# hole} other {# holes}} · par {par}",
+            "playersHeading": "Players",
+            "playersCounter": "{n} of {max} · you are added as the host.",
+            "playersHost": "Host",
+            "playersRemoveAriaLabel": "Remove player",
+            "playersAddLabel": "Add player",
+            "playersSearchPlaceholder": "Name or @username…",
+            "playersSearching": "Searching…",
+            "playersNoResults": "No results.",
+            "playersSearchHint": "Type at least {min} characters to search for friends. You can skip this step and play solo.",
+            "reviewHeading": "Summary",
+            "reviewRouteLabel": "Course",
+            "reviewPlayersLabel": "Players ({n})",
+            "reviewNameLabel": "Round name (optional)",
+            "reviewNamePlaceholder": "e.g. \"Lotników DiscGolfPark · 05/06/2026, 6:30 PM\"",
+            "reviewNameHint": "By default we use the course name plus the current date and time. You can change it.",
+            "actionBack": "Back",
+            "actionNext": "Next",
+            "actionCreating": "Creating…",
+            "actionStart": "Start round",
+            "errorPickCourse": "Pick a course."
+        },
+        "newErrors": {
+            "auth": "Not signed in.",
+            "validation": "Form validation error.",
+            "courseMissing": "The selected course does not exist.",
+            "noHoles": "This course has no holes defined yet.",
+            "createFailed": "Could not create the game{detail}",
+            "playersFailed": "Could not add players{detail}",
+            "generic": "Something went wrong."
+        }
+    },
+    "friends": {
+        "subtitle": "Invitations and relations",
+        "title": "Friends",
+        "addCardTitle": "Add a friend",
+        "searchPlaceholder": "Name or username",
+        "searchButton": "Search",
+        "minHint": "Type at least {min} characters to search for users.",
+        "noResults": "No search results.",
+        "send": "Send invitation",
+        "pendingHeading": "Pending invitations ({n})",
+        "pendingEmpty": "You have no pending invitations.",
+        "incomingSubtitle": "Wants to be your friend",
+        "outgoingSubtitle": "Awaiting response",
+        "accept": "Accept",
+        "reject": "Reject",
+        "cancelInvite": "Cancel",
+        "acceptedHeading": "Friends ({n})",
+        "acceptedEmpty": "You have no friends yet.",
+        "friendSubtitle": "Friend",
+        "remove": "Remove",
+        "footnote": "Invitations are stored in the friendships table and become visible after a refresh.",
+        "errors": {
+            "auth": "Not signed in.",
+            "self_invite": "You cannot add yourself as a friend.",
+            "target_not_found": "User not found.",
+            "already_friends": "You are already friends.",
+            "already_sent": "Invitation already sent.",
+            "already_received": "You already have an invitation from this person.",
+            "invite_not_found": "Invitation not found.",
+            "cannot_accept": "You cannot accept this invitation.",
+            "relation_not_found": "Relation not found.",
+            "cannot_remove": "You cannot remove this relation.",
+            "validation": "Validation error.",
+            "db": "Error: {detail}"
+        },
+        "toast": {
+            "inviteSent": "Invitation sent",
+            "inviteAccepted": "Invitation accepted",
+            "inviteRejected": "Invitation rejected",
+            "removed": "Friend removed",
+            "cancelled": "Invitation cancelled"
+        }
+    },
+    "stats": {
+        "subtitle": "Your results",
+        "title": "Stats",
+        "metrics": {
+            "roundsLabel": "Rounds played",
+            "roundsHoles": "{count, plural, one {# completed hole} other {# completed holes}}",
+            "roundsEmpty": "No data",
+            "averageLabel": "Average score",
+            "averageDescription": "Average strokes per round",
+            "averageEmpty": "Play your first round",
+            "bestLabel": "Best round",
+            "bestStrokes": "{count, plural, one {# stroke} other {# strokes}}",
+            "bestEmpty": "No finished rounds yet"
+        },
+        "recent": {
+            "title": "Recent rounds",
+            "empty": "You have no finished rounds yet."
+        },
+        "leaderboard": {
+            "title": "Friends leaderboard",
+            "scopeHint": "Counted only from rounds you played together.",
+            "peopleBadge": "{count, plural, one {# person} other {# people}}",
+            "empty": "Play a round with a friend to see the leaderboard.",
+            "summary": "{rounds, plural, one {# round} other {# rounds}} · {holes, plural, one {# hole} other {# holes}}",
+            "average": "average {avg} per round"
+        }
+    },
+    "scorecard": {
+        "titleFallback": "Round",
+        "status": {
+            "in_progress": "in progress",
+            "finished": "finished"
+        },
+        "reopen": "Reopen",
+        "finish": "Finish round",
+        "finishDialog": {
+            "title": "Finish the round?",
+            "body": "Scores won't be editable anymore. You can reopen the round later.",
+            "missingBody": "Some scores are still missing. Review the list below. Continue if you still want to finish the round.",
+            "missingSecondConfirm": "This is the second confirmation. The round will be finished with missing scores.",
+            "missingTitle": "Missing scores",
+            "missingHoles": "holes: {holes}",
+            "unknownPlayer": "Unknown player",
+            "reviewMissingConfirm": "I understand, continue",
+            "cancel": "Cancel",
+            "confirm": "Finish round"
+        },
+        "tabs": {
+            "play": "Play",
+            "card": "Card"
+        },
+        "finishedBanner": "Round finished — scores can no longer be edited.",
+        "toast": {
+            "scoreFailed": "Score not saved",
+            "clearFailed": "Score not cleared",
+            "finished": "Round finished",
+            "reopened": "Round reopened"
+        },
+        "errors": {
+            "noGameId": "Missing game id.",
+            "auth": "Not signed in.",
+            "gameNotFound": "Game does not exist.",
+            "onlyHostFinish": "Only the host can finish the round.",
+            "alreadyFinished": "Round already finished.",
+            "onlyHostReopen": "Only the host can reopen the round.",
+            "notPlayer": "You are not a player in this round.",
+            "nameTooLong": "Name can be at most 80 characters.",
+            "displayNameTooLong": "Display name can be at most 40 characters.",
+            "notesTooLong": "Notes can be at most 1000 characters.",
+            "db": "Database error: {detail}"
+        },
+        "notes": {
+            "trigger": "Notes",
+            "ariaLabel": "Round notes",
+            "title": "Round notes",
+            "placeholder": "e.g. east wind 30 km/h, wet after rain…",
+            "save": "Save",
+            "cancel": "Cancel",
+            "savedToast": "Notes saved",
+            "empty": "The host can add notes visible to all players.",
+            "readOnly": "Only the host can edit the notes."
+        },
+        "summary": {
+            "title": "Round finished!",
+            "yourTotal": "Your score",
+            "yourPlace": "{place} place",
+            "yourPlaceFirst": "1st place 🏆",
+            "vsPar": "vs par",
+            "bestHole": "Best hole",
+            "worstHole": "Worst hole",
+            "holeNumberValue": "Hole {n}",
+            "distribution": "Score distribution",
+            "rematch": "Play with this crew",
+            "viewScorecard": "View scorecard",
+            "openTrigger": "Show summary",
+            "noScores": "No completed holes."
+        },
+        "editName": {
+            "label": "Round name",
+            "placeholder": "e.g. Saturday Skaryszewski",
+            "save": "Save",
+            "cancel": "Cancel",
+            "savedToast": "Name saved"
+        },
+        "editDisplayName": {
+            "label": "Your display name in this round",
+            "placeholder": "How should we show you?",
+            "save": "Save",
+            "cancel": "Cancel",
+            "savedToast": "Display name saved",
+            "trigger": "Edit display name"
+        },
+        "presence": {
+            "online": "{n, plural, one {# person online} other {# people online}}",
+            "you": "You"
+        }
+    },
+    "holePlay": {
+        "prevAriaLabel": "Previous hole",
+        "nextAriaLabel": "Next hole",
+        "hole": "Hole",
+        "holeOf": "/ {n}",
+        "par": "Par",
+        "distance": "{m} m",
+        "noScore": "—",
+        "lockedFinished": "Editing locked — round finished.",
+        "lockedNotAllowed": "Only the host or the player themselves can edit.",
+        "nextCta": "Next: hole {n}"
+    },
+    "grid": {
+        "headerPlayer": "Player",
+        "headerTotal": "Tot",
+        "headerVs": "vs",
+        "headerPar": "Par"
+    },
+    "leaderboard": {
+        "title": "Leaderboard",
+        "hostAriaLabel": "Host",
+        "holesPlayed": "{count, plural, one {# hole played} other {# holes played}}"
+    },
+    "strokesPicker": {
+        "ariaQuick": "{n, plural, one {# stroke} other {# strokes}} ({label})",
+        "ariaCustom": "Other stroke count",
+        "ariaSave": "Save",
+        "ariaCancel": "Cancel",
+        "ariaClear": "Clear"
+    },
+    "strokes": {
+        "ace": "Ace",
+        "albatross": "Albatross",
+        "eagle": "Eagle",
+        "birdie": "Birdie",
+        "par": "Par",
+        "bogey": "Bogey",
+        "double-bogey": "Double",
+        "triple-bogey-plus": "Triple+"
+    }
+}

@@ -1,0 +1,10 @@
+node_modules
+.next
+out
+build
+coverage
+.vercel
+public
+package-lock.json
+supabase/.temp
+src/types/database.ts
