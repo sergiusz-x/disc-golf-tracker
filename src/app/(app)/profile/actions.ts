@@ -16,19 +16,22 @@ const profileSchema = z.object({
         .trim()
         .max(80, "fullNameTooLong")
         .nullable()
-        .transform((v) => (v && v.length > 0 ? v : null)),
+        .optional()
+        .transform((v) => (v === undefined ? undefined : v && v.length > 0 ? v : null)),
     username: z
         .string()
         .trim()
         .nullable()
-        .transform((v) => (v && v.length > 0 ? v : null))
-        .refine((v) => v === null || USERNAME_RE.test(v), "usernameInvalid"),
+        .optional()
+        .transform((v) => (v === undefined ? undefined : v && v.length > 0 ? v : null))
+        .refine((v) => v === undefined || v === null || USERNAME_RE.test(v), "usernameInvalid"),
     avatar_url: z
         .string()
         .trim()
         .nullable()
-        .transform((v) => (v && v.length > 0 ? v : null))
-        .refine((v) => v === null || URL_RE.test(v), "avatarInvalid"),
+        .optional()
+        .transform((v) => (v === undefined ? undefined : v && v.length > 0 ? v : null))
+        .refine((v) => v === undefined || v === null || URL_RE.test(v), "avatarInvalid"),
 });
 
 export type UpdateProfileError =
@@ -80,14 +83,18 @@ export async function updateProfile(
         if (taken) return { ok: false, error: "usernameTaken" };
     }
 
-    const { error } = await supabase
-        .from("users")
-        .update({
-            full_name: parsed.data.full_name,
-            username: parsed.data.username,
-            avatar_url: parsed.data.avatar_url,
-        })
-        .eq("id", user.id);
+    const updates: {
+        full_name?: string | null;
+        username?: string | null;
+        avatar_url?: string | null;
+    } = {};
+    if (parsed.data.full_name !== undefined) updates.full_name = parsed.data.full_name;
+    if (parsed.data.username !== undefined) updates.username = parsed.data.username;
+    if (parsed.data.avatar_url !== undefined) updates.avatar_url = parsed.data.avatar_url;
+
+    if (Object.keys(updates).length === 0) return { ok: true };
+
+    const { error } = await supabase.from("users").update(updates).eq("id", user.id);
 
     if (error) {
         // 23505 = unique_violation (race against the pre-check)

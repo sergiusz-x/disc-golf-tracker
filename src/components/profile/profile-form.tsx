@@ -132,11 +132,13 @@ export function ProfileForm({ initial }: { initial: ProfileShape }) {
                 avatarUrl = upload.url;
             }
 
-            const result = await updateProfile({
-                full_name: values.full_name.trim() || null,
-                username: values.username.trim() || null,
-                avatar_url: avatarUrl,
-            });
+            const payload: Parameters<typeof updateProfile>[0] = {};
+            const dirtyFields = form.formState.dirtyFields;
+            if (dirtyFields.full_name) payload.full_name = values.full_name.trim() || null;
+            if (dirtyFields.username) payload.username = values.username.trim() || null;
+            if (dirtyFields.avatar_url || pendingFile) payload.avatar_url = avatarUrl;
+
+            const result = await updateProfile(payload);
 
             if (result.ok) {
                 toast.success(t("savedToast"));
