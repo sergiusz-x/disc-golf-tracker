@@ -2,6 +2,8 @@
     "common": {
         "appName": "Disc Golf Tracker",
         "appShortName": "DGT",
+        "language": "Język",
+        "supportEmail": "kontakt@sergiusz.dev",
         "noName": "Bez imienia",
         "viewAll": "Wszystkie",
         "search": "Szukaj",
@@ -61,6 +63,7 @@
     "userMenu": {
         "ariaLabel": "Menu użytkownika",
         "profile": "Profil",
+        "support": "Kontakt i wsparcie",
         "signOut": "Wyloguj się",
         "nameFallback": "Bez imienia",
         "theme": {
@@ -82,6 +85,10 @@
         "description": "Twórz rozgrywki, zapraszaj znajomych, zapisuj wyniki na żywo i obserwuj statystyki na każdej polskiej trasie.",
         "ctaSignIn": "Zaloguj się",
         "ctaCourses": "Przeglądaj trasy",
+        "footer": {
+            "privacy": "Polityka prywatności",
+            "terms": "Regulamin"
+        },
         "features": {
             "live": {
                 "title": "Live scorecard",
@@ -94,6 +101,117 @@
             "stats": {
                 "title": "Statystyki",
                 "body": "Średnia, najlepsza runda, leaderboard."
+            }
+        }
+    },
+    "privacyPage": {
+        "title": "Polityka prywatności",
+        "intro": "Ten dokument wyjaśnia, jakie dane Disc Golf Tracker zbiera, dlaczego są przetwarzane oraz jakie masz możliwości wyboru.",
+        "operator": {
+            "title": "Kto jest administratorem aplikacji",
+            "body": "Disc Golf Tracker jest prowadzony przez twórcę/właściciela tej aplikacji (osobę, która ją publikuje i utrzymuje)."
+        },
+        "data": {
+            "title": "Dane, które przetwarzamy",
+            "intro": "W zależności od sposobu korzystania z aplikacji możemy przetwarzać:",
+            "items": {
+                "account": {
+                    "label": "Dane konta:",
+                    "body": "Twój adres email oraz unikalny identyfikator konta."
+                },
+                "profile": {
+                    "label": "Dane profilu, które podajesz:",
+                    "body": "Nazwa wyświetlana, nazwa użytkownika oraz avatar (jeśli go ustawisz)."
+                },
+                "gameplay": {
+                    "label": "Dane rozgrywek:",
+                    "body": "Rundy/gry, które tworzysz lub do których dołączasz, zaproszeni gracze, wyniki na dołkach oraz powiązane statystyki."
+                },
+                "technical": {
+                    "label": "Dane techniczne:",
+                    "body": "Podstawowe logi i informacje bezpieczeństwa potrzebne do ochrony logowania i bazy danych."
+                }
+            }
+        },
+        "use": {
+            "title": "W jaki sposób używamy danych",
+            "items": {
+                "auth": "Aby uwierzytelnić użytkownika i utrzymać sesję logowania.",
+                "profile": "Aby utworzyć i wyświetlać profil w aplikacji.",
+                "features": "Aby zapewnić funkcje aplikacji: gry, live scorecard, znajomi, rankingi i statystyki.",
+                "security": "Aby zapobiegać nadużyciom oraz utrzymać niezawodność i bezpieczeństwo usługi."
+            }
+        },
+        "email": {
+            "title": "Wykorzystanie emaila (ważne)",
+            "body": "Disc Golf Tracker przetwarza Twój adres email wyłącznie do uwierzytelnienia i powiązania konta z profilem w aplikacji. Nie używamy emaila do marketingu."
+        },
+        "sharing": {
+            "title": "Udostępnianie danych i podmioty trzecie",
+            "body1": "Disc Golf Tracker nie udostępnia Twojego adresu email podmiotom trzecim do ich własnych celów.",
+            "body2": "Aby aplikacja działała, część danych jest przetwarzana przez dostawców usług (podmioty przetwarzające), np.:",
+            "items": {
+                "supabase": "(baza danych, uwierzytelnianie oraz przechowywanie plików avatarów).",
+                "hostingLabel": "Dostawca hostingu",
+                "hosting": "(miejsce, gdzie aplikacja webowa jest uruchomiona).",
+                "google": "(tylko jeśli wybierzesz logowanie Google; potrzebne do przejścia procesu logowania)."
+            }
+        },
+        "cookies": {
+            "title": "Cookies i pamięć lokalna",
+            "body": "Aplikacja używa cookies lub podobnych mechanizmów, aby utrzymać sesję i zapewnić poprawne działanie. Część danych może być buforowana na urządzeniu dla wydajności i wsparcia offline."
+        },
+        "retention": {
+            "title": "Okres przechowywania",
+            "body": "Dane konta i rozgrywek są przechowywane tak długo, jak istnieje konto, lub do momentu jego usunięcia (jeśli taka funkcja jest dostępna w aplikacji)."
+        },
+        "choices": {
+            "title": "Twoje możliwości",
+            "items": {
+                "update": "Możesz aktualizować dane profilu (w tym avatar) w aplikacji.",
+                "stop": "Możesz przestać korzystać z aplikacji w dowolnym momencie, wylogowując się."
+            }
+        },
+        "contact": {
+            "title": "Kontakt",
+            "body": "Jeśli masz pytania dotyczące prywatności, skontaktuj się z twórcą/właścicielem aplikacji pod adresem"
+        }
+    },
+    "termsPage": {
+        "title": "Regulamin",
+        "intro": "Niniejszy regulamin określa zasady korzystania z aplikacji Disc Golf Tracker.",
+        "sections": {
+            "overview": {
+                "title": "1. Opis usługi",
+                "body": "Disc Golf Tracker pomaga śledzić rundy disc golfa, zapraszać znajomych i przeglądać statystyki. Aplikacja jest udostępniana w formule \u201ejak jest\u201d i może się zmieniać w czasie."
+            },
+            "accounts": {
+                "title": "2. Konta i dostęp",
+                "body": "Odpowiadasz za utrzymanie dostępu do swojego konta oraz za aktywność wykonywaną w ramach tego konta."
+            },
+            "acceptable": {
+                "title": "3. Dozwolone korzystanie",
+                "items": {
+                    "disrupt": "Nie próbuj zakłócać działania usługi, przeciążać jej ani przeprowadzać inżynierii wstecznej.",
+                    "unlawful": "Nie używaj usługi do działań niezgodnych z prawem.",
+                    "content": "Nie przesyłaj treści, do których udostępniania nie masz praw."
+                }
+            },
+            "content": {
+                "title": "4. Treści użytkownika",
+                "body": "Treści dodawane przez Ciebie do aplikacji (np. informacje profilowe, avatary i dane rozgrywek) pozostają Twoją odpowiedzialnością."
+            },
+            "availability": {
+                "title": "5. Dostępność",
+                "body": "Staramy się utrzymywać usługę dostępną, ale nie gwarantujemy nieprzerwanego działania. Mogą wystąpić prace serwisowe, przerwy lub problemy po stronie dostawców."
+            },
+            "termination": {
+                "title": "6. Zakończenie dostępu",
+                "body": "Możemy czasowo zawiesić lub zakończyć dostęp w przypadku nadużyć lub z powodów bezpieczeństwa."
+            },
+            "contact": {
+                "title": "7. Kontakt",
+                "bodyPrefix": "Pytania, zgłoszenia błędów lub prośby dotyczące prywatności:"
             }
         }
     },

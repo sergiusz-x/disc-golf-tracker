@@ -2,6 +2,8 @@
     "common": {
         "appName": "Disc Golf Tracker",
         "appShortName": "DGT",
+        "language": "Language",
+        "supportEmail": "contact@sergiusz.dev",
         "noName": "No name",
         "viewAll": "All",
         "search": "Search",
@@ -61,6 +63,7 @@
     "userMenu": {
         "ariaLabel": "User menu",
         "profile": "Profile",
+        "support": "Contact & support",
         "signOut": "Sign out",
         "nameFallback": "No name",
         "theme": {
@@ -82,6 +85,10 @@
         "description": "Create rounds, invite friends, track scores live and follow your stats on every Polish course.",
         "ctaSignIn": "Sign in",
         "ctaCourses": "Browse courses",
+        "footer": {
+            "privacy": "Privacy Policy",
+            "terms": "Terms of Service"
+        },
         "features": {
             "live": {
                 "title": "Live scorecard",
@@ -94,6 +101,117 @@
             "stats": {
                 "title": "Stats",
                 "body": "Average, best round, leaderboard."
+            }
+        }
+    },
+    "privacyPage": {
+        "title": "Privacy Policy",
+        "intro": "This policy explains what data Disc Golf Tracker collects, why it is processed, and what choices you have.",
+        "operator": {
+            "title": "Who operates this app",
+            "body": "Disc Golf Tracker is operated by the developer/owner of this application (the person who publishes and maintains it)."
+        },
+        "data": {
+            "title": "Data we process",
+            "intro": "Depending on how you use the app, we may process:",
+            "items": {
+                "account": {
+                    "label": "Account data:",
+                    "body": "your email address and a unique account identifier."
+                },
+                "profile": {
+                    "label": "Profile data you provide:",
+                    "body": "display name, username, and avatar image (if you upload one)."
+                },
+                "gameplay": {
+                    "label": "Gameplay data:",
+                    "body": "games/rounds you create or join, players you invite, scores per hole, and related statistics."
+                },
+                "technical": {
+                    "label": "Technical data:",
+                    "body": "basic logs and security information needed to keep authentication and the database secure."
+                }
+            }
+        },
+        "use": {
+            "title": "How we use your data",
+            "items": {
+                "auth": "To authenticate you and keep you signed in.",
+                "profile": "To create and display your profile inside the app.",
+                "features": "To enable core features: games, live scorecard, friends, leaderboards, and stats.",
+                "security": "To prevent abuse and keep the service reliable and secure."
+            }
+        },
+        "email": {
+            "title": "Email usage (important)",
+            "body": "Disc Golf Tracker processes your email address solely for authentication and to associate your account with your in-app profile. We do not use your email for marketing."
+        },
+        "sharing": {
+            "title": "Sharing and third parties",
+            "body1": "Disc Golf Tracker does not share your email address with third parties for their own purposes.",
+            "body2": "To run the app, some data is processed by service providers (processors), for example:",
+            "items": {
+                "supabase": "(database, authentication, and file storage for avatars).",
+                "hostingLabel": "Hosting provider",
+                "hosting": "(where the web app is deployed).",
+                "google": "(only if you choose Google login; used to complete the sign-in flow)."
+            }
+        },
+        "cookies": {
+            "title": "Cookies and local storage",
+            "body": "The app uses cookies or similar storage to keep you signed in and to make the app work correctly. Some data may be cached on your device for performance and offline support."
+        },
+        "retention": {
+            "title": "Retention",
+            "body": "Account and gameplay data is kept for as long as your account exists or until you delete it (if such a feature is available in the app)."
+        },
+        "choices": {
+            "title": "Your choices",
+            "items": {
+                "update": "You can update your profile data (including avatar) in the app.",
+                "stop": "You can stop using the app at any time by signing out."
+            }
+        },
+        "contact": {
+            "title": "Contact",
+            "body": "If you have questions about privacy, contact the developer/owner of this application at"
+        }
+    },
+    "termsPage": {
+        "title": "Terms of Service",
+        "intro": "These terms govern your use of the Disc Golf Tracker application.",
+        "sections": {
+            "overview": {
+                "title": "1. Service overview",
+                "body": "Disc Golf Tracker helps you track disc golf rounds, invite friends, and view statistics. The app is provided on an \u201cas is\u201d basis and may change over time."
+            },
+            "accounts": {
+                "title": "2. Accounts and access",
+                "body": "You are responsible for maintaining access to your account and for all activity performed under it."
+            },
+            "acceptable": {
+                "title": "3. Acceptable use",
+                "items": {
+                    "disrupt": "Do not attempt to disrupt, overload, or reverse engineer the service.",
+                    "unlawful": "Do not use the service for unlawful activities.",
+                    "content": "Do not upload content you do not have the right to share."
+                }
+            },
+            "content": {
+                "title": "4. User content",
+                "body": "Content you add to the app (such as profile information, avatars, and game data) remains your responsibility."
+            },
+            "availability": {
+                "title": "5. Availability",
+                "body": "We aim to keep the service available, but we do not guarantee uninterrupted access. Maintenance, outages, or third-party issues may occur."
+            },
+            "termination": {
+                "title": "6. Termination",
+                "body": "We may suspend or terminate access if the service is abused or for security reasons."
+            },
+            "contact": {
+                "title": "7. Contact",
+                "bodyPrefix": "Questions, bug reports, or privacy requests:"
             }
         }
     },

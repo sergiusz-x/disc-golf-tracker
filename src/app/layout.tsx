@@ -31,6 +31,9 @@ export const metadata: Metadata = {
     },
     description: siteConfig.description,
     applicationName: siteConfig.name,
+    verification: {
+        google: "3Orc8KNLWzXLP6t0hNb8ZZgkEHjo29aQYjdqHaBm_cY",
+    },
     manifest: "/manifest.webmanifest",
     appleWebApp: {
         capable: true,

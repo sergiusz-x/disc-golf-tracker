@@ -24,7 +24,7 @@ export function safeRelativePath(value: string | null | undefined): string | nul
 
 export const siteConfig = {
     name: "Disc Golf Tracker",
-    shortName: "DGT",
+    shortName: "Disc Golf Tracker",
     description: "Śledź swoje rundy disc golfa, zapraszaj znajomych i prowadź scorecard na żywo.",
     themeColor: "#16a34a",
     backgroundColor: "#0a0a0a",

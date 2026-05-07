@@ -1,10 +1,12 @@
 import Link from "next/link";
 import { getTranslations } from "next-intl/server";
 
+import { LocaleSwitcher } from "@/components/layout/locale-switcher";
 import { Button } from "@/components/ui/button";
 
 export default async function HomePage() {
     const t = await getTranslations("landing");
+    const tCommon = await getTranslations("common");
 
     const features = [
         { title: t("features.live.title"), body: t("features.live.body") },
@@ -23,10 +25,8 @@ export default async function HomePage() {
 
                 <div className="space-y-5">
                     <h1 className="text-balance text-4xl font-semibold tracking-tight sm:text-5xl">
-                        {t("titleStart")}{" "}
-                        <span className="text-emerald-600 dark:text-emerald-400">
-                            {t("titleEnd")}
-                        </span>
+                        <span>Disc Golf </span>
+                        <span className="text-emerald-600 dark:text-emerald-400">Tracker</span>
                     </h1>
                     <p className="mx-auto max-w-xl text-balance text-lg text-muted-foreground">
                         {t("description")}
@@ -58,6 +58,26 @@ export default async function HomePage() {
                     ))}
                 </ul>
             </section>
+
+            <footer className="border-t border-border/60 bg-background/60 backdrop-blur">
+                <div className="mx-auto flex w-full max-w-3xl items-center justify-center px-6 py-6">
+                    <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-sm text-muted-foreground">
+                        <Link href="/privacy" className="hover:underline">
+                            {t("footer.privacy")}
+                        </Link>
+                        <Link href="/terms" className="hover:underline">
+                            {t("footer.terms")}
+                        </Link>
+                        <LocaleSwitcher />
+                        <a
+                            href={`mailto:${tCommon("supportEmail")}`}
+                            className="hover:underline"
+                        >
+                            {tCommon("supportEmail")}
+                        </a>
+                    </div>
+                </div>
+            </footer>
         </main>
     );
 }

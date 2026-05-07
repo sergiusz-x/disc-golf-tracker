@@ -3,7 +3,7 @@
 import { useRouter } from "next/navigation";
 import { useLocale, useTranslations } from "next-intl";
 import { useTheme } from "next-themes";
-import { Check, Globe, LogOut, Moon, Sun, SunMoon, User2 } from "lucide-react";
+import { Check, Globe, LogOut, Mail, Moon, Sun, SunMoon, User2 } from "lucide-react";
 
 import type { SessionUser } from "@/components/layout/app-shell";
 import { InstallPwaItem } from "@/components/layout/install-pwa-item";
@@ -23,6 +23,7 @@ import { getInitials } from "@/lib/people";
 export function UserMenu({ user }: { user: SessionUser }) {
     const router = useRouter();
     const t = useTranslations("userMenu");
+    const tCommon = useTranslations("common");
     const currentLocale = useLocale() as Locale;
     const { theme, setTheme } = useTheme();
 
@@ -48,6 +49,10 @@ export function UserMenu({ user }: { user: SessionUser }) {
 
     async function handleSetLocale(locale: Locale) {
         await setLocaleAction(locale);
+    }
+
+    function handleContact() {
+        window.location.href = `mailto:${tCommon("supportEmail")}`;
     }
 
     return (
@@ -115,6 +120,12 @@ export function UserMenu({ user }: { user: SessionUser }) {
                         {currentLocale === loc ? <Check className="h-4 w-4" /> : null}
                     </DropdownMenuItem>
                 ))}
+
+                <DropdownMenuSeparator />
+                <DropdownMenuItem onClick={handleContact}>
+                    <Mail className="mr-2 h-4 w-4" />
+                    {t("support")}
+                </DropdownMenuItem>
 
                 <DropdownMenuSeparator />
                 <InstallPwaItem />

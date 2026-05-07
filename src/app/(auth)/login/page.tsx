@@ -2,6 +2,7 @@ import Link from "next/link";
 import { getTranslations } from "next-intl/server";
 
 import { LoginForm } from "@/components/auth/login-form";
+import { LocaleSwitcher } from "@/components/layout/locale-switcher";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { safeRelativePath } from "@/lib/site";
 
@@ -19,7 +20,10 @@ export default async function LoginPage({ searchParams }: { searchParams: Search
 
     return (
         <Card className="w-full border-emerald-100 shadow-lg dark:border-emerald-900/40">
-            <CardHeader className="space-y-2 text-center">
+            <CardHeader className="relative space-y-2 text-center">
+                <div className="absolute right-3 top-3">
+                    <LocaleSwitcher align="end" />
+                </div>
                 <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-emerald-100 text-2xl dark:bg-emerald-900/60">
                     🥏
                 </div>
@@ -35,7 +39,7 @@ export default async function LoginPage({ searchParams }: { searchParams: Search
                 ) : null}
                 <p className="text-center text-xs text-muted-foreground">
                     {t("termsPrefix")}{" "}
-                    <Link href="/" className="underline underline-offset-2">
+                    <Link href="/terms" className="underline underline-offset-2">
                         {t("termsLink")}
                     </Link>
                     .
