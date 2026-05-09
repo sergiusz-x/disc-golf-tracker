@@ -64,9 +64,9 @@ export default async function StatsPage() {
     const finishedGames = (games ?? []) as RecentGame[];
     const totalRounds = rounds.length;
     const totalHoles = rounds.reduce((sum, row) => sum + (row.holes_played ?? 0), 0);
-    const avgScore =
+    const avgRelative =
         totalRounds > 0
-            ? rounds.reduce((sum, row) => sum + (row.total_strokes ?? 0), 0) / totalRounds
+            ? rounds.reduce((sum, row) => sum + (row.relative_to_par ?? 0), 0) / totalRounds
             : null;
 
     const bestRound =
@@ -74,7 +74,7 @@ export default async function StatsPage() {
             .filter((row) => row.holes_played && row.holes_played > 0)
             .sort((a, b) => (a.relative_to_par ?? 0) - (b.relative_to_par ?? 0))[0] ?? null;
 
-    const friendLeaderboardRows = await loadFriendLeaderboardRows(supabase);
+    const friendLeaderboardRows = await loadFriendLeaderboardRows(supabase, user.id);
     const friendLeaderboard = buildFriendLeaderboard(rowsByUser(friendLeaderboardRows));
 
     const t = await getTranslations("stats");
@@ -103,9 +103,11 @@ export default async function StatsPage() {
                 <MetricCard
                     icon={<Target className="h-4 w-4" />}
                     label={t("metrics.averageLabel")}
-                    value={avgScore ? avgScore.toFixed(1) : "—"}
+                    value={avgRelative !== null ? formatAvgRelative(avgRelative) : "—"}
                     description={
-                        avgScore ? t("metrics.averageDescription") : t("metrics.averageEmpty")
+                        avgRelative !== null
+                            ? t("metrics.averageDescription")
+                            : t("metrics.averageEmpty")
                     }
                 />
                 <MetricCard
@@ -200,7 +202,7 @@ export default async function StatsPage() {
                                         </div>
                                         <div className="text-right">
                                             <p className="font-mono text-sm font-bold">
-                                                {formatRelative(row.relative_to_par)}
+                                                {formatAvgRelative(row.averageRelative)}
                                             </p>
                                             <p className="text-[11px] text-muted-foreground">
                                                 {t("leaderboard.average", {
@@ -219,10 +221,22 @@ export default async function StatsPage() {
     );
 }
 
-async function loadFriendLeaderboardRows(supabase: Awaited<ReturnType<typeof createClient>>) {
+async function loadFriendLeaderboardRows(
+    supabase: Awaited<ReturnType<typeof createClient>>,
+    userId: string,
+) {
+    const { data: userRows } = await supabase
+        .from("game_leaderboard")
+        .select("game_id")
+        .eq("user_id", userId);
+
+    const gameIds = (userRows ?? []).map((r) => r.game_id).filter(Boolean) as string[];
+    if (gameIds.length === 0) return [];
+
     const { data } = await supabase
         .from("game_leaderboard")
-        .select("user_id, display_name, full_name, total_strokes, holes_played, relative_to_par");
+        .select("user_id, display_name, full_name, total_strokes, holes_played, relative_to_par")
+        .in("game_id", gameIds);
 
     return (data ?? []) as LeaderboardRow[];
 }
@@ -279,7 +293,13 @@ function buildFriendLeaderboard(
             ...stats,
             averageRelative: stats.rounds > 0 ? stats.relative_to_par / stats.rounds : 0,
         }))
-        .sort((a, b) => a.relative_to_par - b.relative_to_par);
+        .sort((a, b) => a.averageRelative - b.averageRelative);
+}
+
+function formatAvgRelative(val: number): string {
+    if (val === 0) return "E";
+    const sign = val > 0 ? "+" : "";
+    return `${sign}${val.toFixed(1)}`;
 }
 
 function MetricCard({
