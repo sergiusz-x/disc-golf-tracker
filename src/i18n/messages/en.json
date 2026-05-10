@@ -630,5 +630,11 @@
         "bogey": "Bogey",
         "double-bogey": "Double",
         "triple-bogey-plus": "Triple+"
+    },
+    "desktopBlocker": {
+        "title": "Disc Golf Tracker",
+        "message": "This app is designed for mobile devices.",
+        "hint": "Open it on your phone.",
+        "url": "discgolftracker.sergiusz.dev"
     }
 }

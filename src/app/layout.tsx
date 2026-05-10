@@ -3,6 +3,7 @@ import { Plus_Jakarta_Sans, Geist_Mono } from "next/font/google";
 import { NextIntlClientProvider } from "next-intl";
 import { getLocale, getMessages } from "next-intl/server";
 
+import { DesktopBlocker } from "@/components/layout/desktop-blocker";
 import { ServiceWorkerRegister } from "@/components/layout/sw-register";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Toaster } from "@/components/ui/sonner";
@@ -73,6 +74,7 @@ export default async function RootLayout({
                         disableTransitionOnChange
                     >
                         <TooltipProvider delay={300}>
+                            <DesktopBlocker />
                             <ServiceWorkerRegister />
                             {children}
                             <Toaster richColors position="top-center" />
